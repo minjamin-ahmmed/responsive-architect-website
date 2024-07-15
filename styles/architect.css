@@ -85,20 +85,12 @@
     width: 100%;
 }
 
-@media screen and (max-width:576px) {
-    .nav-links,
-    .navbar,
-    .teams-container {
-        flex-direction: column;    
-    }
-    
-
-}
 
 /* about-container styles */
 .about-section{
     max-width: 1440px;
     margin: 0 auto;
+    margin-bottom: 130px;
 }
 
 .teams-container{
@@ -136,19 +128,235 @@ margin-bottom: 32px;
     gap: 24px;
 }
 
-@media screen and (max-width:576px) {
 
-    .teams{
+/* Feature Section Styles Starts Here */
+
+.feature-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+    gap: 100px;
+}
+
+#feature-heading-style{
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+}
+
+.feature-heading{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.feature-description{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.desktop-card, .drag-drop-card, .awesome-card, .easy-card{
+    max-width: 586px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.card-heading{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-description{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.feature-image-container img {
+    width: 100%;
+
+}
+
+.btn-secondary{
+    padding: 42px 45px;
+}
+
+.feature-image-container button{
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+.button-heading{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.button-experience{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Facts Container Styles */
+.facts-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 180px;
+}
+
+#feature-description-id{
+    margin-bottom: 100px;
+}
+
+.facts-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    margin-left: 50px;
+}
+
+.facts-card-element{
+    background-color: rgb(255, 255, 255);   border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.facts-container-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.facts-container-text{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Sponsor Styles */
+.sponsor-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.sponsor-element{
+    margin-bottom: 50px;
+}
+
+.alignment{
+    margin-top: 0px;
+    text-align: center;
+}
+.sponsor-image{
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.sponsor-image img{
+    filter: grayscale(100%);
+}
+
+.footer-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    padding: 38px 410px;
+}
+
+.footer-description{
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:576px) {
+    .nav-links,
+    .navbar,
+    .teams-container,
+    .feature-container,
+    .sponsor-image {
+        flex-direction: column;    
+    }
+
+    .teams, 
+    .facts-card{
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
 }
 .teams-container{
     margin-left: 10px;
 }
-    
 
+.desktop-card, .drag-drop-card, .awesome-card, .easy-card, .footer-container{
+    width: 100%;
+    padding:0px;
 }
 
+.feature-image-container button{
+    margin-left:0px;
+    margin-top:0px;
+}
+
+.sponsor-image{
+    gap: 50px;
+}
+
+.footer-description{
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+    
+}
+
+/* Medium Size Device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams-container,  .feature-container{
+        flex-direction: column;
+    }
+
+    .feature-image-container button{
+        margin-left:0px;
+        margin-top:0px;
+    }
+}
 
 
 
